@@ -1,0 +1,120 @@
+#info_selection{
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1250px;
+  height: 500px;
+  padding: 0px;
+
+}
+#results_selection{
+  background-color: rgba(0,0,0,.8);
+  float: left;
+  width: 745px;
+  height: 460px;
+  margin-left: -314px;
+  border-radius: 20px;
+  padding: 20px;
+  list-style-type: none;
+  z-index: 0;
+  display: inline;
+  margin-right:-1200px;
+}
+#movie_selection{
+  background-color: rgba(0,0,0,.8);
+  float: right;
+  width: 400px;
+  height: 460px;
+  border-radius: 20px;
+  padding: 20px;
+  z-index: 1;
+  display: inline;
+  margin-left:-1200px;
+}
+
+#poster_selection {
+  height: 460px;
+  width: 380px;
+  margin-top: 0px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+#inner{
+  background-color: rgb(207,207,207);
+  width: 685px; //745
+  height: 420px; //460
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+#uno{
+  
+  width: 322.5px;
+  height: 400px;
+  padding: 10px;
+  float: left;
+  font-family: 'Titillium Web', sans-serif;
+  color: rgb(38,38,38);
+}
+
+#dos{
+  // background-color: blue;
+  width: 322.5px;
+  height: 130px;
+  padding-top: 70px;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: right;
+  font-family: 'Titillium Web', sans-serif;
+  color: rgb(38,38,38);
+}
+
+#tres{
+  margin-top: 30px;
+  width: 292.5px;
+  height: 190px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 40px;
+  float: right;
+  clear: right;
+  font-family: 'Titillium Web', sans-serif;
+  color: rgb(38,38,38);
+  text-align: justify;
+}
+
+#estrella{
+  margin-left: 100px;
+  margin-bottom: 10px;
+}
+
+#rating{
+  margin-left: 100px;
+  font-family: 'Titillium Web', sans-serif;
+  color: rgb(38,38,38);
+  font-size: 22px;
+}
+
+#rating_button{
+  width: 200px;
+  height: 35px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  color: white; 
+  font-size: 20px;
+  background: rgb(217,16,42);
+  font-family: 'Lily Script One', cursive;
+  margin-top: 10px;
+}
+#rating_button:active {
+  background-color: #4C0000;
+}
+
+#h1_uno{
+  font-size: 37px;
+  margin-bottom: 0px;
+}
+
+

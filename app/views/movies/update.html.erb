@@ -1,0 +1,51 @@
+<header>
+  <div id="header_a">
+    <div id="image_block"><a class="link" href="http://localhost:3000/"><img src="/assets/popcorn.png" width="140"></a></div>
+    <div id="words_block"><a class="link" href="http://localhost:3000/">Movie Land</a></div>
+
+    <div id="search_block">
+      <form action="/results" method="post">
+        <input id="input_results" type="text" placeholder="Type the name of the movie you are looking for." name="query">
+        <button id="button_results">Search</button>
+      </form> 
+    </div>
+  </div> 
+</header>      
+<div id="info_selection">    
+  <div id="results_selection">
+    <div id="inner">
+      <div id="uno">
+        <h1 id="h1_uno"><%=@movie_results["Title"]%></h1>
+        <h2 id="h2_uno"><em>(<%=@movie_results["Year"]%>)</em></h2>
+        <h3 id="h3_uno">Rated: <%=@movie_results["Rated"]%></h3><br/>
+        <p id="p_uno">
+          <strong>Released:</strong> <%=@movie_results["Released"]%><br/>
+          <strong>Genre:</strong> <%=@movie_results["Genre"]%><br/>
+          <strong>Actors:</strong> <%=@movie_results["Actors"]%><br/>
+          <strong>Director:</strong> <%=@movie_results["Director"]%><br/>
+          <strong>Writer:</strong> <%=@movie_results["Writer"]%><br/>
+      </div>
+      <div id="dos">
+        <img id="estrella" src=<%="/assets/#{@flag}-star.png"%> width="200"><br/>
+        <form id="rating" action="/movies/<%=@movie_results["imdbID"]%>" method="post">
+          <input type="radio" name="rad" value="1">1&nbsp;
+          <input type="radio" name="rad" value="2">2&nbsp;
+          <input type="radio" name="rad" value="3">3&nbsp;
+          <input type="radio" name="rad" value="4">4&nbsp;
+          <input type="radio" name="rad" value="5">5<br/>
+          <button id="rating_button">Rate!</button>
+        </form>
+      </div>
+      <div id="tres">
+        <strong>Plot:</strong> <%=@movie_results["Plot"]%>
+      </div>
+    </div>
+  </div>
+  <div id="movie_selection">
+    <% if @movie_results["Poster"] == "N/A" %>
+      <img id="poster_selection" src="/assets/movies.png">
+    <%else%>
+      <img id="poster_selection" src=<%=@movie_results["Poster"]%>>
+    <%end%>
+  </div> 
+</div>

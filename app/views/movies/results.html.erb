@@ -1,0 +1,28 @@
+<header>
+  <div id="header_a">
+    <div id="image_block"><a class="link" href="http://localhost:3000/"><img src="/assets/popcorn.png" width="140"></a></div>
+    <div id="words_block"><a class="link" href="http://localhost:3000/">Movie Land</a></div>
+
+    <div id="search_block">
+      <form action="/results" method="post">
+        <input id="input_results" type="text" placeholder="Type the name of the movie you are looking for." name="query">
+        <button id="button_results">Search</button>
+      </form> 
+    </div>
+  </div> 
+</header>      
+<div id="info">    
+  <div id="results">
+    <% if @results["Search"] == nil %>
+      <li class="result">That movie title doesn't exist!</li>
+    <%else%>
+      <% @results["Search"].each do |x| %>
+        <li> </strong><a id="a_results" href="http://localhost:3000/movies/<%=x["imdbID"]%>"><strong><%= x["Title"] %></strong></a> <em> (<%= x["Year"] %>) </em> </li>
+      <% end %>
+    <%end%>
+  </div>
+  <!-- <div id="movie">
+    <img id="poster" src="">
+    <div id="link"><strong></strong></div>
+  </div> --> 
+</div>

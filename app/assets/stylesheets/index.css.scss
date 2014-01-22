@@ -1,0 +1,75 @@
+#header_b{
+  background: url("/assets/background.jpg");
+  background-size: cover;
+  margin: -22px -8px 0 -8px;
+  height: 500px;
+  box-shadow: 4px 4px 4px #292929;
+}
+
+#center_block{
+  margin: auto auto;
+  width: 700px;
+  height: 500px;
+}
+#top_block{
+  padding-top: 40px;
+  text-align: center;
+}
+#bottom_block{
+  color: white;
+  padding: 0px;
+  margin: 0;
+  font-size: 90px;
+  font-family: 'Monoton', cursive;
+  text-shadow: 4px 4px 4px #292929;  
+  letter-spacing: 5px;
+  word-spacing: 2px; 
+  text-align: center;
+
+}
+#h1_index {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-family: 'Lily Script One', cursive;
+  padding: 0;
+  margin: 0;
+}
+#form_index {
+  width: 600px;
+  margin: 50px auto;
+  background-color: red;
+}
+#button_index{
+  width: 100px;
+  height: 35px;
+  float: right;
+  border-radius: 10px;
+  border: 1px solid grey;
+  color: white; 
+  font-size: 20px;
+  background: rgb(217,16,42);
+  font-family: 'Lily Script One', cursive;
+}
+#button_index:active {
+  background-color: #4C0000;    
+}
+#input_index{
+  width: 480px;
+  height: 30px;
+  float: left;
+  border-radius: 10px;
+  border: 1px solid grey;
+  box-shadow: 1px 1px 1px grey;
+  font-size: 18px;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  color: black;
+  padding-left: 10px;
+}
+
+.link{
+  text-decoration: none;
+  color: white;
+}
+
+
